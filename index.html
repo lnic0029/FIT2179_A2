@@ -16,21 +16,24 @@
         vegaEmbed('#choropleth_map', map).then(function(result) {}).catch(console.error);
     </script>  
 
+    <div class="dashboard">
 
+        <div id="area_graph"></div>
+        <div id="line_graph"></div>
 
-    <div class="chart-text-container">
-    <div id="area_graph"></div>
         <div class="chart-description">
             <p>
                 This chart shows the trend of deaths over time in Australia by gender.
                 It highlights a steady increase in total deaths.
             </p>
         </div>
-        <script type="text/javascript">
-        var total_deaths = "js/total_deaths_australia_area.vg.json";
-        vegaEmbed('#area_graph', total_deaths).then(function() {}).catch(console.error);
-    </script>
+
     </div>
+
+    <script>
+        vegaEmbed('#area_graph', "js/total_deaths_australia_area.vg.json").then(function() {}).catch(console.error);
+        vegaEmbed('#line_graph', "js/total_deaths_australia_line.vg.json").then(function() {}).catch(console.error);
+    </script>
     
 </body>
 </html>

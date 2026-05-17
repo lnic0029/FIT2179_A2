@@ -54,5 +54,10 @@
       {"field": "gender", "type": "nominal", "title": "Gender"},
       {"field": "deaths", "type": "quantitative", "title": "Deaths", "format": ","}
     ]
+  },
+  "config": {
+  "view": {
+    "stroke": null
+  }
   }
 }

@@ -1,38 +1,43 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Deaths Over Time by Gender (Australia)",
-  "width": 700,
-  "height": 400,
-  "data": {
-    "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/main/data/cleaned_total_deaths_australia.csv",
-    "format": {
-        "type": "csv"
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Deaths Over Time by Gender (Australia)",
+    "width": 400,
+    "height": 200,
+    "data": {
+        "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/cleaned_total_deaths_australia.csv",
+        "format": {
+            "type": "csv"
+        }
+    },
+    "mark": {
+        "type": "line",
+        "point": true
+    },
+    "encoding": {
+        "x": {
+        "field": "year",
+        "type": "temporal",
+        "title": "Year"
+        },
+        "y": {
+        "field": "deaths",
+        "type": "quantitative",
+        "title": "Total Deaths"
+        },
+        "color": {
+        "field": "gender",
+        "type": "nominal",
+        "title": "Gender"
+        },
+        "tooltip": [
+        {"field": "year", "type": "ordinal"},
+        {"field": "gender", "type": "nominal"},
+        {"field": "deaths", "type": "quantitative"}
+        ]
+    },
+    "config": {
+        "view": {
+            "stroke": null
+        }
     }
-  },
-  "mark": {
-    "type": "line",
-    "point": true
-  },
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "temporal",
-      "title": "Year"
-    },
-    "y": {
-      "field": "deaths",
-      "type": "quantitative",
-      "title": "Total Deaths"
-    },
-    "color": {
-      "field": "gender",
-      "type": "nominal",
-      "title": "Gender"
-    },
-    "tooltip": [
-      {"field": "year", "type": "ordinal"},
-      {"field": "gender", "type": "nominal"},
-      {"field": "deaths", "type": "quantitative"}
-    ]
-  }
 }
