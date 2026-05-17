@@ -1,34 +1,34 @@
-year, gender, number_of_deaths
-2014, males, 78679
-2014, females, 75707
-2014, total, 154386
-2015, males, 80606
-2015, females, 76849
-2015, total, 157455
-2016, males, 82285
-2016, females, 76949
-2016, total, 159234
-2017, males, 84851
-2017, females, 79522
-2017, total, 164373
-2018, males, 83009
-2018, females, 76487
-2018, total, 159496
-2019, males, 85740
-2019, females, 79104
-2019, total, 164844
-2020, males, 85302
-2020, females, 77421
-2020, total, 162723
-2021, males, 89876
-2021, females, 82326
-2021, total, 172202
-2022, males, 100373
-2022, females, 91234
-2022, total, 191607
-2023, males, 96169
-2023, females, 87052
-2023, total, 183221
-2024, males, 98268
-2024, females, 88669
-2024, total, 186937
+year,gender,deaths
+2014,males,78679
+2014,females,75707
+2014,total,154386
+2015,males,80606
+2015,females,76849
+2015,total,157455
+2016,males,82285
+2016,females,76949
+2016,total,159234
+2017,males,84851
+2017,females,79522
+2017,total,164373
+2018,males,83009
+2018,females,76487
+2018,total,159496
+2019,males,85740
+2019,females,79104
+2019,total,164844
+2020,males,85302
+2020,females,77421
+2020,total,162723
+2021,males,89876
+2021,females,82326
+2021,total,172202
+2022,males,100373
+2022,females,91234
+2022,total,191607
+2023,males,96169
+2023,females,87052
+2023,total,183221
+2024,males,98268
+2024,females,88669
+2024,total,186937
