@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Deaths Over Time by Gender (Australia)",
+  "title": "Deaths Over Time in Australia",
 
   "width": 600,
   "height": 400,
