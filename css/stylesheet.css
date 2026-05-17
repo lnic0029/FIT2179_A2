@@ -1,8 +1,20 @@
 #choropleth_map {
-	top:100px;
-	bottom: 100px; 
+	top:50px;
+	bottom: 50px; 
 	left: 100px;
 	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
+	background-color: "#94d7f1";
+	height: 1200px;
+	width: 900px;
 }
+
+h1 {
+	display: flex;
+  	justify-content: center;
+	text-decoration: underline;
+}
+
+/*"#1f77b4",
+"#d62728",
+"#1ba31e",
+"#bdbdbd"*/
