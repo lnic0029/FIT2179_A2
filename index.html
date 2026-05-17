@@ -7,15 +7,20 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="all">
 </head>
 <body>
-  
-<div id="choropleth_map">
+    <h1>Causes of Death</h1>
 
-<script type="text/javascript">
+    <div id="choropleth_map"></div> 
+    <script type="text/javascript">
 
-    var spec2 = "js/choropleth.vg.json";
-    vegaEmbed('#choropleth_map', spec2).then(function(result) {}).catch(console.error);
-</script>
-</div>   
+        var map = "js/choropleth.vg.json";
+        vegaEmbed('#choropleth_map', map).then(function(result) {}).catch(console.error);
+    </script>  
 
+    <div id="line_graph"></div>
+    <script type="text/javascript">
+        var total_deaths = "js/total_deaths_australia.vg.json";
+        vegaEmbed('#line_graph', total_deaths).then(function() {}).catch(console.error);
+    </script>
+    
 </body>
 </html>

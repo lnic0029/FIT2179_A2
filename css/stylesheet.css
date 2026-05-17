@@ -1,12 +1,21 @@
 #choropleth_map {
 	top:50px;
-	bottom: 50px; 
+	bottom: 25px; 
 	left: 100px;
 	right: 100px;
 	background-color: "#94d7f1";
 	height: 1200px;
 	width: 900px;
 }
+
+#line_graph {
+	top:25px;
+	bottom: 25px; 
+	left: 100px;
+	right: 100px;
+	display: flex;
+  	justify-content: left;
+} 
 
 h1 {
 	display: flex;
