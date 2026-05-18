@@ -45,7 +45,7 @@
                     "fields": [
                         "country",
                         "largest_major_category",
-                        "number_of_deaths"
+                        "percentage_of_total_deaths"
                     ]
                     }
                 }
