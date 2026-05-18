@@ -88,9 +88,9 @@
                         "title": "Category"
                     },
                     {
-                        "field": "number_of_deaths", 
+                        "field": "percentage_of_total_deaths", 
                         "type": "quantitative",
-                        "title": "Deaths"
+                        "title": "Percentage of Total Deaths"
                     }
                 ]
             }
