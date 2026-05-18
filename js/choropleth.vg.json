@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Categories of Leading Causes of Death (2021)",
-    "width": 1000,
-    "height": 500,
+    "width": 1250,
+    "height": 625,
     "data": {
         "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
@@ -59,6 +59,7 @@
 
             "encoding": {
                 "color": {
+                    "legend": { "orient": "bottom" },
                     "field": "largest_major_category",
                     "type": "nominal",
                     "title": "Leading Cause Category",
@@ -73,6 +74,16 @@
                             "#1ba31e",
                             "#bdbdbd"
                         ]
+                    }
+                },
+
+                "opacity": {
+                    "legend":null,
+                    "field": "percentage_of_total_deaths",
+                    "type": "quantitative",
+                    "scale": {
+                    "domain": [0, 100],
+                    "range": [0.2, 1]
                     }
                 },
 
