@@ -39,7 +39,7 @@
                     "lookup": "properties.ADM0_A3",
                     "from": {
                     "data": {
-                        "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/main/data/cleaned_leading_causes.csv"
+                        "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/cleaned_leading_causes.csv"
                     },
                     "key": "iso3",
                     "fields": [
