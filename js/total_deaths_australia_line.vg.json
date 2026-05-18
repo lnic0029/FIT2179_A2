@@ -34,7 +34,7 @@
         }
         },
         "tooltip": [
-        {"field": "year", "type": "ordinal"},
+        {"field": "year", "type": "temporal"},
         {"field": "gender", "type": "nominal"},
         {"field": "deaths", "type": "quantitative"}
         ]

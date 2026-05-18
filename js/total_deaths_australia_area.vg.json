@@ -47,13 +47,7 @@
         "domain": ["males", "females"],
         "range": ["#f58518", "#9d18f5"]
       }
-    },
-
-    "tooltip": [
-      {"field": "year", "type": "temporal", "title": "Year"},
-      {"field": "gender", "type": "nominal", "title": "Gender"},
-      {"field": "deaths", "type": "quantitative", "title": "Deaths", "format": ","}
-    ]
+    }
   },
   "config": {
   "view": {
