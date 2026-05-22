@@ -1,0 +1,166 @@
+year,grouped_cause,sex,deaths
+2014,Cancer,females,57853.0
+2014,Cancer,males,72682.0
+2014,Cancer,persons,130535.0
+2014,Heart disease,females,27159.0
+2014,Heart disease,males,29009.0
+2014,Heart disease,persons,56168.0
+2014,Injuries,females,7587.0
+2014,Injuries,males,10800.0
+2014,Injuries,persons,18387.0
+2014,Other,females,72075.0
+2014,Other,males,65955.0
+2014,Other,persons,138030.0
+2014,Respiratory diseases,females,9125.0
+2014,Respiratory diseases,males,9163.0
+2014,Respiratory diseases,persons,18288.0
+2015,Cancer,females,58855.0
+2015,Cancer,males,74994.0
+2015,Cancer,persons,133849.0
+2015,Heart disease,females,26373.0
+2015,Heart disease,males,29223.0
+2015,Heart disease,persons,55596.0
+2015,Injuries,females,8040.0
+2015,Injuries,males,11396.0
+2015,Injuries,persons,19436.0
+2015,Other,females,73875.0
+2015,Other,males,68046.0
+2015,Other,persons,141921.0
+2015,Respiratory diseases,females,9775.0
+2015,Respiratory diseases,males,9168.0
+2015,Respiratory diseases,persons,18943.0
+2016,Cancer,females,59246.0
+2016,Cancer,males,76206.0
+2016,Cancer,persons,135452.0
+2016,Heart disease,females,25256.0
+2016,Heart disease,males,29220.0
+2016,Heart disease,persons,54476.0
+2016,Injuries,females,8557.0
+2016,Injuries,males,12370.0
+2016,Injuries,persons,20927.0
+2016,Other,females,74575.0
+2016,Other,males,70011.0
+2016,Other,persons,144586.0
+2016,Respiratory diseases,females,9867.0
+2016,Respiratory diseases,males,9340.0
+2016,Respiratory diseases,persons,19207.0
+2017,Cancer,females,60197.0
+2017,Cancer,males,77197.0
+2017,Cancer,persons,137394.0
+2017,Heart disease,females,25678.0
+2017,Heart disease,males,29195.0
+2017,Heart disease,persons,54873.0
+2017,Injuries,females,8733.0
+2017,Injuries,males,12309.0
+2017,Injuries,persons,21042.0
+2017,Other,females,77118.0
+2017,Other,males,73140.0
+2017,Other,persons,150258.0
+2017,Respiratory diseases,females,11267.0
+2017,Respiratory diseases,males,10868.0
+2017,Respiratory diseases,persons,22135.0
+2018,Cancer,females,60978.0
+2018,Cancer,males,78209.0
+2018,Cancer,persons,139187.0
+2018,Heart disease,females,23549.0
+2018,Heart disease,males,28162.0
+2018,Heart disease,persons,51711.0
+2018,Injuries,females,8743.0
+2018,Injuries,males,12709.0
+2018,Injuries,persons,21452.0
+2018,Other,females,74291.0
+2018,Other,males,70839.0
+2018,Other,persons,145130.0
+2018,Respiratory diseases,females,9361.0
+2018,Respiratory diseases,males,9393.0
+2018,Respiratory diseases,persons,18754.0
+2019,Cancer,females,62486.0
+2019,Cancer,males,80019.0
+2019,Cancer,persons,142505.0
+2019,Heart disease,females,23287.0
+2019,Heart disease,males,28119.0
+2019,Heart disease,persons,51406.0
+2019,Injuries,females,8783.0
+2019,Injuries,males,12979.0
+2019,Injuries,persons,21762.0
+2019,Other,females,77025.0
+2019,Other,males,74131.0
+2019,Other,persons,151156.0
+2019,Respiratory diseases,females,10853.0
+2019,Respiratory diseases,males,10052.0
+2019,Respiratory diseases,persons,20905.0
+2020,Cancer,females,63347.0
+2020,Cancer,males,80245.0
+2020,Cancer,persons,143592.0
+2020,Heart disease,females,21983.0
+2020,Heart disease,males,27619.0
+2020,Heart disease,persons,49602.0
+2020,Injuries,females,9018.0
+2020,Injuries,males,13767.0
+2020,Injuries,persons,22785.0
+2020,Other,females,76607.0
+2020,Other,males,74027.0
+2020,Other,persons,150634.0
+2020,Respiratory diseases,females,7658.0
+2020,Respiratory diseases,males,8184.0
+2020,Respiratory diseases,persons,15842.0
+2021,Cancer,females,65008.0
+2021,Cancer,males,82384.0
+2021,Cancer,persons,147392.0
+2021,Heart disease,females,23359.0
+2021,Heart disease,males,28749.0
+2021,Heart disease,persons,52108.0
+2021,Injuries,females,9666.0
+2021,Injuries,males,13895.0
+2021,Injuries,persons,23561.0
+2021,Other,females,82478.0
+2021,Other,males,79439.0
+2021,Other,persons,161917.0
+2021,Respiratory diseases,females,8306.0
+2021,Respiratory diseases,males,8614.0
+2021,Respiratory diseases,persons,16920.0
+2022,Cancer,females,65897.0
+2022,Cancer,males,84283.0
+2022,Cancer,persons,150180.0
+2022,Heart disease,females,24866.0
+2022,Heart disease,males,31133.0
+2022,Heart disease,persons,55999.0
+2022,Injuries,females,10453.0
+2022,Injuries,males,14899.0
+2022,Injuries,persons,25352.0
+2022,Other,females,91745.0
+2022,Other,males,89580.0
+2022,Other,persons,181325.0
+2022,Respiratory diseases,females,9536.0
+2022,Respiratory diseases,males,9983.0
+2022,Respiratory diseases,persons,19519.0
+2023,Cancer,females,66874.0
+2023,Cancer,males,85929.0
+2023,Cancer,persons,152803.0
+2023,Heart disease,females,23078.0
+2023,Heart disease,males,28917.0
+2023,Heart disease,persons,51995.0
+2023,Injuries,females,10009.0
+2023,Injuries,males,14932.0
+2023,Injuries,persons,24941.0
+2023,Other,females,87177.0
+2023,Other,males,85544.0
+2023,Other,persons,172721.0
+2023,Respiratory diseases,females,9596.0
+2023,Respiratory diseases,males,10022.0
+2023,Respiratory diseases,persons,19618.0
+2024,Cancer,females,67313.0
+2024,Cancer,males,85547.0
+2024,Cancer,persons,152860.0
+2024,Heart disease,females,22025.0
+2024,Heart disease,males,28231.0
+2024,Heart disease,persons,50256.0
+2024,Injuries,females,9827.0
+2024,Injuries,males,14542.0
+2024,Injuries,persons,24369.0
+2024,Other,females,88268.0
+2024,Other,males,87201.0
+2024,Other,persons,175469.0
+2024,Respiratory diseases,females,11069.0
+2024,Respiratory diseases,males,10898.0
+2024,Respiratory diseases,persons,21967.0
