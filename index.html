@@ -7,37 +7,62 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="all">
 </head>
 <body>
-    <h1>Causes of Death</h1>
-    <h2>Global Causes of Death</h2>
-    <div id="choropleth_map"></div> 
-    <script type="text/javascript">
+    <h1>How Causes of Death Differ Between Countries and Over Time</h1>
+    <div id="section1" class="section">
+        <h2>Global Causes of Death</h2>
+        <div id="choropleth_map"></div> 
+        <script type="text/javascript">
 
-        var map = "js/choropleth.vg.json";
-        vegaEmbed('#choropleth_map', map).then(function(result) {}).catch(console.error);
-    </script>  
-    <p id="map_description">
-        This is an overview of the types of deaths that were most common in each
-        country in 2021.
-    </p>
-    <h2>Causes of Death in Australia</h2>
-    <div class="dashboard">
+            var map = "js/choropleth.vg.json";
+            vegaEmbed('#choropleth_map', map).then(function(result) {}).catch(console.error);
+        </script>  
+        <p id="map_description">
+            This is an overview of the types of deaths that were most common in each
+            country in 2021.
+        </p>
 
-        <div id="area_graph"></div>
-        <div id="line_graph"></div>
+        <!--global stacked bar chart ///-->
 
-        <div class="chart-description">
-            <p>
-                This chart shows the trend of deaths over time in Australia by gender.
-                It highlights a steady increase in total deaths.
-            </p>
-        </div>
-
+        <!--bubble plot comaring development and causes of death-->
     </div>
 
-    <script>
-        vegaEmbed('#area_graph', "js/total_deaths_australia_area.vg.json").then(function() {}).catch(console.error);
-        vegaEmbed('#line_graph', "js/total_deaths_australia_line.vg.json").then(function() {}).catch(console.error);
-    </script>
+    <div id="section2" class="section">
+        <h2>Transition to Australia</h2>
+        <!--compare australia to global-->
+    </div>
+
+    <div id="section3" class="section">
+        <h2>Causes of Death in Australia</h2>
+        <div class="dashboard">
+            <div id="area_graph"></div>
+            <div id="line_graph"></div>
+
+            <div class="chart-description">
+                <p>
+                    This chart shows the trend of deaths over time in Australia by gender.
+                    It highlights a steady increase in total deaths.
+                </p>
+            </div>
+        </div>
+        <script>
+            vegaEmbed('#area_graph', "js/stacked_area_aus_causes.vg.json").then(function() {}).catch(console.error);
+            vegaEmbed('#line_graph', "js/total_deaths_australia_line.vg.json").then(function() {}).catch(console.error);
+        </script>
+
+        <!--stacked area chart, how causes of death changed over time-->
+        <!--heatmap cause of death intensity over time-->
+    </div>
+
+    <div id="section4" class="section">
+        <h2>Age</h2>
+        <!-- heatmap age group vs cause-->
+        <!-- sankey diagram : flow from age to cause-->
+    </div>
+
+    <div id="section5" class="section">
+        <h2>Overview</h2>
+        <!--Ranked Slope Graph: How leading causes changed rank over time in Australia-->
+    </div>
     
 </body>
 </html>
