@@ -39,7 +39,7 @@
           "lookup": "properties.ADM0_A3",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/cleaned_leading_causes.csv"
+              "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/cleaned_leading_causes_2021.csv"
             },
             "key": "iso3",
             "fields": [
@@ -67,9 +67,10 @@
             "domain": [
               "Noncommunicable diseases",
               "Communicable, maternal, perinatal and nutritional conditions",
+              "Injuries",
               "nan"
             ],
-            "range": ["#1f77b4", "#1ba31e", "#731fb4"]
+            "range": ["#1f77b4", "#1ba31e", "#ffffff", "000000"]
           }
         },
 
