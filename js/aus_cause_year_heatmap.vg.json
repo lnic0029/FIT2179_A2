@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 450,
+  "title": "Top Cause per Year Highlighted",
+
+  "data": {
+    "url": "../data/aust_top15_causes.csv"
+  },
+
+  "transform": [
+    {
+      "filter": "datum.sex === 'persons'"
+    },
+
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "deaths",
+          "as": "yearly_deaths"
+        }
+      ],
+      "groupby": ["year", "cause"]
+    },
+
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "rank"
+        }
+      ],
+      "groupby": ["year"],
+      "sort": [{ "field": "yearly_deaths", "order": "descending" }]
+    }
+  ],
+
+  "layer": [
+    {
+      "transform": [{ "filter": "datum.rank > 1" }],
+
+      "mark": "rect",
+
+      "encoding": {
+        "x": { "field": "year", "type": "ordinal" },
+        "y": { "field": "cause", "type": "nominal" },
+
+        "color": {
+          "field": "yearly_deaths",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          },
+          "title": "Deaths"
+        },
+        "tooltip": [
+          { "field": "year", "type": "ordinal" },
+          { "field": "cause", "type": "nominal" },
+          {
+            "field": "yearly_deaths",
+            "type": "quantitative",
+            "title": "Deaths"
+          },
+          {
+            "field": "rank",
+            "type": "quantitative",
+            "title": "Rank (per year)"
+          }
+        ]
+      }
+    },
+
+    {
+      "transform": [{ "filter": "datum.rank === 1" }],
+
+      "mark": {
+        "type": "rect",
+        "stroke": "darkred",
+        "strokeWidth": 2
+      },
+
+      "encoding": {
+        "x": { "field": "year", "type": "ordinal" },
+        "y": { "field": "cause", "type": "nominal" },
+
+        "color": {
+          "value": "darkred"
+        },
+        "tooltip": [
+          { "field": "year", "type": "ordinal" },
+          { "field": "cause", "type": "nominal" },
+          {
+            "field": "yearly_deaths",
+            "type": "quantitative",
+            "title": "Deaths"
+          },
+          {
+            "field": "rank",
+            "type": "quantitative",
+            "title": "Rank (per year)"
+          }
+        ]
+      }
+    }
+  ]
+}
