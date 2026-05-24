@@ -1,0 +1,166 @@
+year,cause,sex,deaths
+2014,Acute myocardial infarction (I21),persons,8675.0
+2014,Cerebrovascular diseases (I60-I69),persons,10745.0
+2014,Chronic ischaemic heart disease (I25),persons,11191.0
+2014,Chronic lower respiratory diseases (J40-J47),persons,7891.0
+2014,Ischaemic heart diseases (I20-I25),persons,20251.0
+2014,Malignant neoplasm of bronchus and lung (C34),persons,8289.0
+2014,Malignant neoplasms  (C00-C97),persons,43801.0
+2014,Malignant neoplasms of digestive organs  (C15-C26),persons,12468.0
+2014,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,8614.0
+2014,"Organic, including symptomatic, mental disorders (F00-F09)",persons,8671.0
+2014,Other chronic obstructive pulmonary disease (J44),persons,6326.0
+2014,Other degenerative diseases of the nervous system (G30-G32),persons,4190.0
+2014,Other external causes of accidental injury (W00-X59),persons,5005.0
+2014,Other forms of heart disease (I30-I52),persons,8741.0
+2014,Unspecified dementia (F03),persons,7197.0
+2015,Acute myocardial infarction (I21),persons,8358.0
+2015,Cerebrovascular diseases (I60-I69),persons,10716.0
+2015,Chronic ischaemic heart disease (I25),persons,10947.0
+2015,Chronic lower respiratory diseases (J40-J47),persons,7923.0
+2015,Ischaemic heart diseases (I20-I25),persons,19698.0
+2015,Malignant neoplasm of bronchus and lung (C34),persons,8422.0
+2015,Malignant neoplasms  (C00-C97),persons,44870.0
+2015,Malignant neoplasms of digestive organs  (C15-C26),persons,12975.0
+2015,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,8707.0
+2015,"Organic, including symptomatic, mental disorders (F00-F09)",persons,9021.0
+2015,Other chronic obstructive pulmonary disease (J44),persons,6340.0
+2015,Other degenerative diseases of the nervous system (G30-G32),persons,4294.0
+2015,Other external causes of accidental injury (W00-X59),persons,5342.0
+2015,Other forms of heart disease (I30-I52),persons,9068.0
+2015,Unspecified dementia (F03),persons,7512.0
+2016,Acute myocardial infarction (I21),persons,8009.0
+2016,Cerebrovascular diseases (I60-I69),persons,10511.0
+2016,Chronic ischaemic heart disease (I25),persons,10945.0
+2016,Chronic lower respiratory diseases (J40-J47),persons,8156.0
+2016,Ischaemic heart diseases (I20-I25),persons,19327.0
+2016,Malignant neoplasm of bronchus and lung (C34),persons,8405.0
+2016,Malignant neoplasms  (C00-C97),persons,45489.0
+2016,Malignant neoplasms of digestive organs  (C15-C26),persons,13286.0
+2016,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,8699.0
+2016,"Organic, including symptomatic, mental disorders (F00-F09)",persons,9581.0
+2016,Other chronic obstructive pulmonary disease (J44),persons,6560.0
+2016,Other degenerative diseases of the nervous system (G30-G32),persons,4650.0
+2016,Other external causes of accidental injury (W00-X59),persons,5835.0
+2016,Other forms of heart disease (I30-I52),persons,8941.0
+2016,Unspecified dementia (F03),persons,7977.0
+2017,Acute myocardial infarction (I21),persons,8017.0
+2017,Cerebrovascular diseases (I60-I69),persons,10462.0
+2017,Chronic ischaemic heart disease (I25),persons,10796.0
+2017,Chronic lower respiratory diseases (J40-J47),persons,8652.0
+2017,Ischaemic heart diseases (I20-I25),persons,19212.0
+2017,Malignant neoplasm of bronchus and lung (C34),persons,8438.0
+2017,Malignant neoplasms  (C00-C97),persons,46214.0
+2017,Malignant neoplasms of digestive organs  (C15-C26),persons,13503.0
+2017,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,8720.0
+2017,"Organic, including symptomatic, mental disorders (F00-F09)",persons,9991.0
+2017,Other chronic obstructive pulmonary disease (J44),persons,7055.0
+2017,Other degenerative diseases of the nervous system (G30-G32),persons,5052.0
+2017,Other external causes of accidental injury (W00-X59),persons,5886.0
+2017,Other forms of heart disease (I30-I52),persons,9311.0
+2017,Unspecified dementia (F03),persons,8399.0
+2018,Acute myocardial infarction (I21),persons,7335.0
+2018,Cerebrovascular diseases (I60-I69),persons,10041.0
+2018,Chronic ischaemic heart disease (I25),persons,10378.0
+2018,Chronic lower respiratory diseases (J40-J47),persons,7940.0
+2018,Ischaemic heart diseases (I20-I25),persons,18081.0
+2018,Malignant neoplasm of bronchus and lung (C34),persons,8623.0
+2018,Malignant neoplasms  (C00-C97),persons,46773.0
+2018,Malignant neoplasms of digestive organs  (C15-C26),persons,13625.0
+2018,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,8916.0
+2018,"Organic, including symptomatic, mental disorders (F00-F09)",persons,9870.0
+2018,Other chronic obstructive pulmonary disease (J44),persons,6469.0
+2018,Other degenerative diseases of the nervous system (G30-G32),persons,4946.0
+2018,Other external causes of accidental injury (W00-X59),persons,6139.0
+2018,Other forms of heart disease (I30-I52),persons,8813.0
+2018,Unspecified dementia (F03),persons,8441.0
+2019,Acute myocardial infarction (I21),persons,6915.0
+2019,Cerebrovascular diseases (I60-I69),persons,9722.0
+2019,Chronic ischaemic heart disease (I25),persons,10373.0
+2019,Chronic lower respiratory diseases (J40-J47),persons,8363.0
+2019,Ischaemic heart diseases (I20-I25),persons,17694.0
+2019,Malignant neoplasm of bronchus and lung (C34),persons,8619.0
+2019,Malignant neoplasms  (C00-C97),persons,47803.0
+2019,Malignant neoplasms of digestive organs  (C15-C26),persons,13748.0
+2019,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,8949.0
+2019,"Organic, including symptomatic, mental disorders (F00-F09)",persons,10434.0
+2019,Other chronic obstructive pulmonary disease (J44),persons,6794.0
+2019,Other degenerative diseases of the nervous system (G30-G32),persons,5303.0
+2019,Other external causes of accidental injury (W00-X59),persons,6159.0
+2019,Other forms of heart disease (I30-I52),persons,9074.0
+2019,Unspecified dementia (F03),persons,8855.0
+2020,Acute myocardial infarction (I21),persons,6644.0
+2020,Cerebrovascular diseases (I60-I69),persons,9605.0
+2020,Chronic ischaemic heart disease (I25),persons,9993.0
+2020,Chronic lower respiratory diseases (J40-J47),persons,7232.0
+2020,Ischaemic heart diseases (I20-I25),persons,17052.0
+2020,Malignant neoplasm of bronchus and lung (C34),persons,8542.0
+2020,Malignant neoplasms  (C00-C97),persons,48167.0
+2020,Malignant neoplasms of digestive organs  (C15-C26),persons,14225.0
+2020,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,8835.0
+2020,"Organic, including symptomatic, mental disorders (F00-F09)",persons,10133.0
+2020,Other chronic obstructive pulmonary disease (J44),persons,5846.0
+2020,Other degenerative diseases of the nervous system (G30-G32),persons,5493.0
+2020,Other external causes of accidental injury (W00-X59),persons,6515.0
+2020,Other forms of heart disease (I30-I52),persons,8784.0
+2020,Unspecified dementia (F03),persons,8324.0
+2021,Acute myocardial infarction (I21),persons,6551.0
+2021,Cerebrovascular diseases (I60-I69),persons,9846.0
+2021,Chronic ischaemic heart disease (I25),persons,10594.0
+2021,Chronic lower respiratory diseases (J40-J47),persons,7853.0
+2021,Ischaemic heart diseases (I20-I25),persons,17533.0
+2021,Malignant neoplasm of bronchus and lung (C34),persons,8793.0
+2021,Malignant neoplasms  (C00-C97),persons,49540.0
+2021,Malignant neoplasms of digestive organs  (C15-C26),persons,14511.0
+2021,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,9095.0
+2021,"Organic, including symptomatic, mental disorders (F00-F09)",persons,10676.0
+2021,Other chronic obstructive pulmonary disease (J44),persons,6408.0
+2021,Other degenerative diseases of the nervous system (G30-G32),persons,6184.0
+2021,Other external causes of accidental injury (W00-X59),persons,6841.0
+2021,Other forms of heart disease (I30-I52),persons,9610.0
+2021,Unspecified dementia (F03),persons,8825.0
+2022,Acute myocardial infarction (I21),persons,6833.0
+2022,Cerebrovascular diseases (I60-I69),persons,9824.0
+2022,Chronic ischaemic heart disease (I25),persons,11652.0
+2022,Chronic lower respiratory diseases (J40-J47),persons,8682.0
+2022,Ischaemic heart diseases (I20-I25),persons,18882.0
+2022,Malignant neoplasm of bronchus and lung (C34),persons,9088.0
+2022,Malignant neoplasms  (C00-C97),persons,50438.0
+2022,Malignant neoplasms of digestive organs  (C15-C26),persons,14620.0
+2022,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,9401.0
+2022,"Organic, including symptomatic, mental disorders (F00-F09)",persons,11600.0
+2022,Other chronic obstructive pulmonary disease (J44),persons,7028.0
+2022,Other degenerative diseases of the nervous system (G30-G32),persons,6441.0
+2022,Other external causes of accidental injury (W00-X59),persons,7451.0
+2022,Other forms of heart disease (I30-I52),persons,10281.0
+2022,Unspecified dementia (F03),persons,9666.0
+2023,Acute myocardial infarction (I21),persons,5885.0
+2023,Cerebrovascular diseases (I60-I69),persons,9366.0
+2023,Chronic ischaemic heart disease (I25),persons,10636.0
+2023,Chronic lower respiratory diseases (J40-J47),persons,8422.0
+2023,Ischaemic heart diseases (I20-I25),persons,16956.0
+2023,Malignant neoplasm of bronchus and lung (C34),persons,9028.0
+2023,Malignant neoplasms  (C00-C97),persons,51259.0
+2023,Malignant neoplasms of digestive organs  (C15-C26),persons,14902.0
+2023,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,9353.0
+2023,"Organic, including symptomatic, mental disorders (F00-F09)",persons,11160.0
+2023,Other chronic obstructive pulmonary disease (J44),persons,6765.0
+2023,Other degenerative diseases of the nervous system (G30-G32),persons,6326.0
+2023,Other external causes of accidental injury (W00-X59),persons,7241.0
+2023,Other forms of heart disease (I30-I52),persons,10154.0
+2023,Unspecified dementia (F03),persons,9166.0
+2024,Acute myocardial infarction (I21),persons,5445.0
+2024,Cerebrovascular diseases (I60-I69),persons,9139.0
+2024,Chronic ischaemic heart disease (I25),persons,9963.0
+2024,Chronic lower respiratory diseases (J40-J47),persons,9124.0
+2024,Ischaemic heart diseases (I20-I25),persons,15900.0
+2024,Malignant neoplasm of bronchus and lung (C34),persons,9105.0
+2024,Malignant neoplasms  (C00-C97),persons,51277.0
+2024,Malignant neoplasms of digestive organs  (C15-C26),persons,15033.0
+2024,Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),persons,9430.0
+2024,"Organic, including symptomatic, mental disorders (F00-F09)",persons,11627.0
+2024,Other chronic obstructive pulmonary disease (J44),persons,7525.0
+2024,Other degenerative diseases of the nervous system (G30-G32),persons,6887.0
+2024,Other external causes of accidental injury (W00-X59),persons,7263.0
+2024,Other forms of heart disease (I30-I52),persons,10303.0
+2024,Unspecified dementia (F03),persons,9469.0
