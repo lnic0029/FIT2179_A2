@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 700,
   "height": 450,
-  "title": "Top Cause per Year Highlighted",
+  "title": "Top Causes of Death per Year in Australia",
 
   "data": {
     "url": "../data/aust_top15_causes.csv"
@@ -36,11 +36,21 @@
     }
   ],
 
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+
   "layer": [
     {
-      "transform": [{ "filter": "datum.rank > 1" }],
+      "transform": [{ "filter": "datum.rank === 1" }],
 
-      "mark": "rect",
+      "mark": {
+        "type": "rect",
+        "stroke": "darkred",
+        "strokeWidth": 2
+      },
 
       "encoding": {
         "x": { "field": "year", "type": "ordinal" },
@@ -50,9 +60,11 @@
           "field": "yearly_deaths",
           "type": "quantitative",
           "scale": {
-            "scheme": "blues"
+            "range": ["#d31009d7", "#b40d07d7", "#910b06d7", "#650303"]
           },
-          "title": "Deaths"
+          "legend": {
+            "title": "Top Death Cause Each Year"
+          }
         },
         "tooltip": [
           { "field": "year", "type": "ordinal" },
@@ -72,20 +84,21 @@
     },
 
     {
-      "transform": [{ "filter": "datum.rank === 1" }],
+      "transform": [{ "filter": "datum.rank > 1" }],
 
-      "mark": {
-        "type": "rect",
-        "stroke": "darkred",
-        "strokeWidth": 2
-      },
+      "mark": "rect",
 
       "encoding": {
         "x": { "field": "year", "type": "ordinal" },
         "y": { "field": "cause", "type": "nominal" },
 
         "color": {
-          "value": "darkred"
+          "field": "yearly_deaths",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          },
+          "title": "Deaths"
         },
         "tooltip": [
           { "field": "year", "type": "ordinal" },
