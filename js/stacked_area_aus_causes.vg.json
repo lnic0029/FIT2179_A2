@@ -1,47 +1,48 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Mortality by Cause Group (Australia, 2014–2024)",
-  "width": 700,
+  "width": 600,
   "height": 400,
+
   "data": {
-    "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/main/data/australia_grouped_causes.csv"
+    "url": "../data/australia_grouped_causes.csv"
   },
+
   "transform": [
-    {
-      "filter": "datum.sex == 'persons'"
-    }
+    { "filter": "datum.sex == 'persons'" },
+    { "calculate": "toNumber(datum.year)", "as": "year_num" }
   ],
+
   "mark": {
     "type": "area",
     "opacity": 0.8
   },
+
   "encoding": {
     "x": {
-      "field": "year",
-      "type": "ordinal",
-      "scale": {
-        "domain": [2014, 2024]
-      },
-      "title": "Year"
+      "field": "year_num",
+      "type": "quantitative",
+      "title": "Year",
+      "sort": "ascending"
     },
+
     "y": {
       "field": "deaths",
       "type": "quantitative",
-      "aggregate": "sum",
+      "stack": "zero",
       "title": "Deaths"
     },
+
     "color": {
       "field": "grouped_cause",
       "type": "nominal",
-      "title": "Cause Group",
-      "scale": {
-        "scheme": "set2"
-      }
+      "title": "Cause Group"
     },
+
     "tooltip": [
       { "field": "year", "type": "ordinal" },
       { "field": "grouped_cause", "type": "nominal" },
-      { "field": "deaths", "type": "quantitative", "aggregate": "sum" }
+      { "field": "deaths", "type": "quantitative" }
     ]
   }
 }
