@@ -1,7 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
+  "width": "container",
   "height": 450,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "title": "Top Causes of Death per Year in Australia",
 
   "data": {

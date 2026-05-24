@@ -1,7 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
+  "width": "container",
   "height": 450,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "title": "Regional Distribution of Major Causes of Death (2021)",
 
   "data": {
