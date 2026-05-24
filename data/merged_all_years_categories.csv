@@ -1,4 +1,4 @@
-country,iso3,sex,major_category,number_of_deaths,percentage_of_total_deaths,Year
+country,iso3,sex,major_category,number_of_deaths,percentage_of_total_deaths,year
 Afghanistan,AFG,persons,"Communicable, maternal, perinatal and nutritional conditions",155691.97,60.96,2000
 Afghanistan,AFG,persons,Noncommunicable diseases,75383.5,29.52,2000
 Afghanistan,AFG,persons,Injuries,24314.48,9.52,2000
