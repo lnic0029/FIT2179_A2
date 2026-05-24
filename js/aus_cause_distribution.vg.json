@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 400,
+  "title": "Pareto Chart of Causes of Death",
+
+  "data": {
+    "url": "../data/australia_cause_time.csv"
+  },
+
+  "transform": [
+    {
+      "filter": "datum.sex === 'persons'"
+    },
+    {
+      "aggregate": [{ "op": "sum", "field": "deaths", "as": "total_deaths" }],
+      "groupby": ["cause"]
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "total_deaths",
+          "as": "cumulative_deaths"
+        }
+      ],
+      "sort": [{ "field": "total_deaths", "order": "descending" }],
+      "frame": [null, 0]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "total_deaths",
+          "as": "grand_total"
+        }
+      ]
+    },
+    {
+      "calculate": "datum.cumulative_deaths / datum.grand_total",
+      "as": "cumulative_pct"
+    },
+    {
+      "window": [{ "op": "rank", "as": "rank" }],
+      "sort": [{ "field": "total_deaths", "order": "descending" }]
+    },
+    {
+      "filter": "datum.rank <= 20"
+    }
+  ],
+
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "cause",
+          "type": "nominal",
+          "sort": "-y",
+          "title": "Cause"
+        },
+        "y": {
+          "field": "total_deaths",
+          "type": "quantitative",
+          "title": "Total Deaths"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "red",
+        "point": true
+      },
+      "encoding": {
+        "x": {
+          "field": "cause",
+          "type": "nominal",
+          "sort": "-y"
+        },
+        "y": {
+          "field": "cumulative_pct",
+          "type": "quantitative",
+          "axis": {
+            "title": "Cumulative %",
+            "format": ".0%"
+          }
+        }
+      }
+    }
+  ]
+}
