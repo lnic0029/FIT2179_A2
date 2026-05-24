@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 350,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "data": {
+    "url": "../data/global_age_causes_2021.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.age_group != 'All ages'"
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "age_group",
+      "type": "nominal",
+      "axis": { "labelAngle": -25 },
+      "title": "Age Group"
+    },
+    "xOffset": {
+      "field": "cause"
+    },
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": "Percent of deaths"
+    },
+    "color": {
+      "field": "cause",
+      "type": "nominal"
+    },
+    "tooltip": [
+      { "field": "country" },
+      { "field": "age_group" },
+      { "field": "cause" },
+      { "field": "percent" },
+      { "field": "deaths" }
+    ]
+  }
+}
