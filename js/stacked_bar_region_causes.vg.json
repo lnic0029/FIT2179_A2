@@ -2,10 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 700,
   "height": 450,
-  "title": "Distribution of Major Death Categories by Region",
+  "title": "Regional Distribution of Major Causes of Death (2021)",
 
   "data": {
-    "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/merged_all_years_categories.csv"
+    "url": "../data/merged_all_years_categories.csv"
   },
 
   "transform": [
@@ -215,7 +215,7 @@
       "filter": "datum.sex == 'persons'"
     },
     {
-      "filter": "datum.year == '2021'"
+      "filter": "datum.year == 2021"
     }
   ],
 
