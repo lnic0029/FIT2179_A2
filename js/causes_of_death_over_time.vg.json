@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 400,
+  "title": "Global Causes of Death Over Time (Normalized)",
+
+  "data": {
+    "url": "../data/merged_all_years_categories.csv"
+  },
+
+  "transform": [
+    {
+      "filter": "datum.sex === 'persons'"
+    },
+    {
+      "calculate": "toNumber(datum.year)",
+      "as": "year"
+    }
+  ],
+
+  "mark": "area",
+
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year",
+      "scale": {
+        "domain": [2000, 2021]
+      },
+      "axis": {
+        "format": "d"
+      }
+    },
+
+    "y": {
+      "aggregate": "sum",
+      "field": "number_of_deaths",
+      "type": "quantitative",
+      "stack": "normalize",
+      "axis": { "format": ".0%" },
+      "title": "Share of Deaths"
+    },
+
+    "color": {
+      "field": "major_category",
+      "type": "nominal",
+      "title": "Cause of Death",
+      "scale": {
+        "domain": [
+          "Communicable, maternal, perinatal and nutritional conditions",
+          "Noncommunicable diseases",
+          "Injuries"
+        ],
+        "range": ["#1f77b4", "#1ba31e", "#731fb4"]
+      }
+    },
+
+    "tooltip": [
+      { "field": "year", "type": "ordinal" },
+      { "field": "major_category", "type": "nominal" },
+      {
+        "aggregate": "sum",
+        "field": "number_of_deaths",
+        "type": "quantitative"
+      }
+    ]
+  }
+}
