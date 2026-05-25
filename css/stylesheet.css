@@ -1,59 +1,117 @@
-#choropleth_map {
-	margin-top:10px;
-	margin-bottom: 10px; 
-	margin-left: 50px;
-	margin-right: 50px;
-	background-color: "#94d7f1";
+* {
+    box-sizing: border-box;
 }
 
-#map_description {
-	margin-left: 50px;
-	margin-right: 100px;
-}
-
-#area_graph {
-	background-color: "#94d7f1";
-	min-width: 0;
-	grid-column: 1;
-	grid-row: 1 / span 2;
-} 
-
-#line_graph {
-	background-color: "#94d7f1";
-	grid-column: 2;
-	grid-row: 1;
-	min-width: 0;
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    background-color: #f7f9fc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    line-height: 1.6;
 }
 
 h1 {
-	display: flex;
-  	justify-content: center;
-	text-decoration: underline;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 0;
+    /*background: linear-gradient(135deg, #1e3a8a, #2563eb);*/
+	background: #2563eb;
+    color: white;
+    font-size: 2rem;
 }
 
-h2 {
-	margin-top: 80px;
-	margin-left: 50px;
+.section {
+    padding: 40px 8%;
+}
+
+.section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    border-left: 5px solid #2563eb;
+    padding-left: 12px;
+}
+
+#choropleth_map,
+#area_graph,
+#line_graph {
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+    overflow: hidden;
 }
 
 .dashboard {
-	margin-top: 10px;
+    display: grid;
 	margin-bottom: 50px;
-	margin-left: 50px;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+
+    gap: 20px;
+
+    align-items: start;
+    width: 100%;
+    overflow-x: hidden;
+}
+.dashboard2 {
 	display: grid;
-	align-items: start;
+	margin-bottom: 50px;
 
-	grid-template-columns: auto auto;
-	grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
 
-	gap: 150px;
+    align-items: start;
+    width: 100%;
+    overflow-x: hidden;
 }
 
+.dashboard > * {
+    min-width: 0;
+}
+
+#area_graph {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    min-height: 500px;
+}
+
+#line_graph {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 250px;
+}
 
 .chart-description {
-	grid-column: 2;
-	grid-row: 2;
-	align-self: center;
-	margin-right: 10px;
+    grid-column: 2;
+    grid-row: 2;
+
+    background: #ffffff;
+    padding: 15px;
+
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+
+    align-self: start;
 }
+
+#map_description {
+    background: white;
+    padding: 12px;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+
+    max-width: 900px;
+    margin-top: 15px;
+}
+
 
