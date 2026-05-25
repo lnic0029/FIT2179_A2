@@ -34,6 +34,15 @@
     <div id="section3" class="section">
         <h2>Causes of Death in Australia</h2>
         <div class="dashboard">
+            <div id="top_causes"></div>
+            <div id="cause_distribution"></div>
+        </div>
+        <script>
+            vegaEmbed('#cause_distribution', "js/aus_cause_distribution.vg.json").then(function() {}).catch(console.error);
+            vegaEmbed('#top_causes', "js/aus_top_causes_bar_chart.vg.json").then(function() {}).catch(console.error);
+        </script>
+
+        <div class="dashboard">
             <div id="area_graph"></div>
             <div id="line_graph"></div>
 
@@ -47,6 +56,13 @@
         <script>
             vegaEmbed('#area_graph', "js/stacked_area_aus_causes.vg.json").then(function() {}).catch(console.error);
             vegaEmbed('#line_graph', "js/total_deaths_australia_line.vg.json").then(function() {}).catch(console.error);
+        </script>
+
+        <div class="dashboard">
+            <div id="heatmap"></div>
+        </div>
+        <script>
+            vegaEmbed('#heatmap', "js/aus_cause_year_heatmap.vg.json").then(function() {}).catch(console.error);
         </script>
 
         <!--stacked area chart, how causes of death changed over time-->
