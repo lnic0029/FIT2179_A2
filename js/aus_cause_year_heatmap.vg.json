@@ -9,7 +9,7 @@
   "title": "Top Causes of Death per Year in Australia",
 
   "data": {
-    "url": "../data/aust_top15_causes.csv"
+    "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/aust_top15_causes.csv"
   },
 
   "transform": [

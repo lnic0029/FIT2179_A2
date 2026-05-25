@@ -9,7 +9,7 @@
   "title": "Top 10 Causes of Death",
 
   "data": {
-    "url": "../data/australia_cause_time.csv"
+    "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/australia_cause_time.csv"
   },
 
   "transform": [

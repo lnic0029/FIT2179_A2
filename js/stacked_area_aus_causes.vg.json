@@ -1,11 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Mortality by Cause Group (Australia, 2014–2024)",
-  "width": 600,
+  "width": "container",
   "height": 400,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
 
   "data": {
-    "url": "../data/australia_grouped_causes.csv"
+    "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/australia_grouped_causes.csv"
   },
 
   "transform": [
