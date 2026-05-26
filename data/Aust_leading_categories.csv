@@ -1,0 +1,100 @@
+sheet,year,leading_chapter,chapter_deaths,total_deaths,percent_of_total
+Australia,2014,Diseases of the circulatory system,45232.0,154386.0,29.3
+Australia,2015,Neoplasms,46118.0,157455.0,29.29
+Australia,2016,Neoplasms,46682.0,159234.0,29.32
+Australia,2017,Neoplasms,47394.0,164373.0,28.83
+Australia,2018,Neoplasms,48017.0,159496.0,30.11
+Australia,2019,Neoplasms,49119.0,164844.0,29.8
+Australia,2020,Neoplasms,49539.0,162723.0,30.44
+Australia,2021,Neoplasms,50858.0,172202.0,29.53
+Australia,2022,Neoplasms,51793.0,191607.0,27.03
+Australia,2023,Neoplasms,52622.0,183221.0,28.72
+Australia,2024,Neoplasms,52693.0,186937.0,28.19
+New South Wales,2014,Diseases of the circulatory system,15854.0,52397.0,30.26
+New South Wales,2015,Diseases of the circulatory system,15726.0,53047.0,29.65
+New South Wales,2016,Neoplasms,15360.0,53275.0,28.83
+New South Wales,2017,Neoplasms,15601.0,55362.0,28.18
+New South Wales,2018,Neoplasms,15719.0,52792.0,29.78
+New South Wales,2019,Neoplasms,16294.0,54813.0,29.73
+New South Wales,2020,Neoplasms,16172.0,53295.0,30.34
+New South Wales,2021,Neoplasms,16629.0,56323.0,29.52
+New South Wales,2022,Neoplasms,16879.0,63131.0,26.74
+New South Wales,2023,Neoplasms,16903.0,59176.0,28.56
+New South Wales,2024,Neoplasms,16954.0,59910.0,28.3
+Victoria,2014,Diseases of the circulatory system,11238.0,38650.0,29.08
+Victoria,2015,Neoplasms,11158.0,38986.0,28.62
+Victoria,2016,Neoplasms,11570.0,39937.0,28.97
+Victoria,2017,Neoplasms,11617.0,40876.0,28.42
+Victoria,2018,Neoplasms,11785.0,39834.0,29.59
+Victoria,2019,Neoplasms,11962.0,41089.0,29.11
+Victoria,2020,Neoplasms,12126.0,41063.0,29.53
+Victoria,2021,Neoplasms,12548.0,43072.0,29.13
+Victoria,2022,Neoplasms,12628.0,47660.0,26.5
+Victoria,2023,Neoplasms,12940.0,44968.0,28.78
+Victoria,2024,Neoplasms,12704.0,45957.0,27.64
+Queensland,2014,Neoplasms,8923.0,28776.0,31.01
+Queensland,2015,Neoplasms,9038.0,29779.0,30.35
+Queensland,2016,Neoplasms,9292.0,29924.0,31.05
+Queensland,2017,Neoplasms,9536.0,31522.0,30.25
+Queensland,2018,Neoplasms,9696.0,31007.0,31.27
+Queensland,2019,Neoplasms,10022.0,32085.0,31.24
+Queensland,2020,Neoplasms,10219.0,31757.0,32.18
+Queensland,2021,Neoplasms,10556.0,34085.0,30.97
+Queensland,2022,Neoplasms,10858.0,38234.0,28.4
+Queensland,2023,Neoplasms,11123.0,37162.0,29.93
+Queensland,2024,Neoplasms,11240.0,38425.0,29.25
+South Australia,2014,Diseases of the circulatory system,3919.0,13386.0,29.28
+South Australia,2015,Neoplasms,3900.0,13540.0,28.8
+South Australia,2016,Neoplasms,3738.0,13423.0,27.85
+South Australia,2017,Neoplasms,3895.0,14046.0,27.73
+South Australia,2018,Neoplasms,4076.0,13607.0,29.96
+South Australia,2019,Neoplasms,4127.0,13955.0,29.57
+South Australia,2020,Neoplasms,4174.0,13792.0,30.26
+South Australia,2021,Neoplasms,4109.0,14384.0,28.57
+South Australia,2022,Neoplasms,4164.0,15935.0,26.13
+South Australia,2023,Neoplasms,4360.0,15380.0,28.35
+South Australia,2024,Neoplasms,4238.0,15643.0,27.09
+Western Australia,2014,Neoplasms,4062.0,13730.0,29.58
+Western Australia,2015,Neoplasms,4211.0,14476.0,29.09
+Western Australia,2016,Neoplasms,4477.0,14944.0,29.96
+Western Australia,2017,Neoplasms,4437.0,14538.0,30.52
+Western Australia,2018,Neoplasms,4539.0,14646.0,30.99
+Western Australia,2019,Neoplasms,4401.0,15049.0,29.24
+Western Australia,2020,Neoplasms,4534.0,15070.0,30.09
+Western Australia,2021,Neoplasms,4663.0,16096.0,28.97
+Western Australia,2022,Neoplasms,4749.0,17459.0,27.2
+Western Australia,2023,Neoplasms,4850.0,17596.0,27.56
+Western Australia,2024,Neoplasms,5040.0,17969.0,28.05
+Tasmania,2014,Neoplasms,1331.0,4456.0,29.87
+Tasmania,2015,Neoplasms,1402.0,4640.0,30.22
+Tasmania,2016,Neoplasms,1329.0,4588.0,28.97
+Tasmania,2017,Neoplasms,1377.0,4790.0,28.75
+Tasmania,2018,Neoplasms,1256.0,4287.0,29.3
+Tasmania,2019,Neoplasms,1346.0,4631.0,29.06
+Tasmania,2020,Neoplasms,1334.0,4424.0,30.15
+Tasmania,2021,Neoplasms,1380.0,4814.0,28.67
+Tasmania,2022,Neoplasms,1474.0,5150.0,28.62
+Tasmania,2023,Neoplasms,1422.0,5140.0,27.67
+Tasmania,2024,Neoplasms,1540.0,5349.0,28.79
+Northern Territory,2014,Neoplasms,317.0,1149.0,27.59
+Northern Territory,2015,Neoplasms,304.0,1127.0,26.97
+Northern Territory,2016,Neoplasms,286.0,1059.0,27.01
+Northern Territory,2017,Neoplasms,316.0,1118.0,28.26
+Northern Territory,2018,Neoplasms,338.0,1164.0,29.04
+Northern Territory,2019,Neoplasms,325.0,1130.0,28.76
+Northern Territory,2020,Neoplasms,327.0,1148.0,28.48
+Northern Territory,2021,Neoplasms,340.0,1224.0,27.78
+Northern Territory,2022,Neoplasms,343.0,1418.0,24.19
+Northern Territory,2023,Neoplasms,307.0,1303.0,23.56
+Northern Territory,2024,Neoplasms,338.0,1255.0,26.93
+Australian Capital Territory,2014,Neoplasms,552.0,1835.0,30.08
+Australian Capital Territory,2015,Neoplasms,561.0,1852.0,30.29
+Australian Capital Territory,2016,Neoplasms,625.0,2069.0,30.21
+Australian Capital Territory,2017,Neoplasms,609.0,2088.0,29.17
+Australian Capital Territory,2018,Neoplasms,603.0,2134.0,28.26
+Australian Capital Territory,2019,Neoplasms,634.0,2065.0,30.7
+Australian Capital Territory,2020,Neoplasms,645.0,2155.0,29.93
+Australian Capital Territory,2021,Neoplasms,622.0,2176.0,28.58
+Australian Capital Territory,2022,Neoplasms,693.0,2594.0,26.72
+Australian Capital Territory,2023,Neoplasms,706.0,2467.0,28.62
+Australian Capital Territory,2024,Neoplasms,625.0,2389.0,26.16
