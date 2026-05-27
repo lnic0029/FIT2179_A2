@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "width": 650,
+  "height": 450,
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/global_age_causes_2021.csv"
+  },
+
+  "params": [
+    {
+      "name": "country_search",
+      "value": "",
+      "bind": {
+        "input": "search",
+        "placeholder": "Search country (e.g. aus, ang, arg)",
+        "name": "Country Search"
+      }
+    }
+  ],
+
+  "transform": [
+    {
+      "filter": "datum.age_group != 'All ages'"
+    },
+
+    {
+      "filter": "test(regexp(country_search, 'i'), datum.country) || country_search == ''"
+    }
+  ],
+
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": true
+      },
+
+      "encoding": {
+        "detail": {
+          "field": "country"
+        },
+
+        "x": {
+          "field": "age_group",
+          "type": "ordinal",
+          "title": "Age Group",
+          "sort": ["0-4", "5-14", "15-29", "30-49", "50-59", "60-69", "70+"],
+          "scale": {
+            "padding": 0
+          }
+        },
+
+        "y": {
+          "field": "percent",
+          "type": "quantitative",
+          "title": "Percentage of Deaths"
+        },
+
+        "color": {
+          "legend": { "orient": "bottom" },
+          "field": "cause",
+          "type": "nominal",
+          "title": "Cause Category",
+          "scale": {
+            "domain": [
+              "Communicable, maternal, perinatal and nutritional conditions",
+              "Noncommunicable diseases",
+              "Injuries"
+            ],
+            "range": ["#1f77b4", "#1ba31e", "#731fb4"]
+          }
+        },
+
+        "opacity": {
+          "condition": {
+            "param": "country_search",
+            "value": 1
+          },
+          "value": 0.2
+        },
+
+        "tooltip": [
+          { "field": "country", "type": "nominal" },
+          { "field": "age_group", "type": "nominal" },
+          { "field": "cause", "type": "nominal" },
+          { "field": "percent", "type": "quantitative", "format": ".2f" }
+        ]
+      }
+    }
+  ]
+}
