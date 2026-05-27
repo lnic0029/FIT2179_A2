@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "width": 700,
+  "height": 500,
+  "title": "Categories of Leading Causes of Death in Australia (2014-2024)",
+
+  "projection": {
+    "type": "mercator"
+  },
+
+  "params": [
+    {
+      "name": "year",
+      "value": 2014,
+      "bind": {
+        "input": "range",
+        "min": 2014,
+        "max": 2024,
+        "step": 1,
+        "name": "Year: ",
+        "element": "#year-slider"
+      }
+    }
+  ],
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/Aust_leading_categories.csv"
+  },
+
+  "transform": [
+    {
+      "filter": "datum.year == year"
+    },
+
+    {
+      "lookup": "sheet",
+
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/js/ne_50m_admin_1_states_provinces.json",
+
+          "format": {
+            "type": "topojson",
+            "feature": "ne_50m_admin_1_states_provinces"
+          }
+        },
+
+        "key": "properties.name"
+      },
+
+      "as": "geo"
+    }
+  ],
+
+  "mark": {
+    "type": "geoshape",
+    "stroke": "black",
+    "strokeWidth": 0.5
+  },
+
+  "encoding": {
+    "shape": {
+      "field": "geo",
+      "type": "geojson"
+    },
+
+    "color": {
+      "field": "leading_chapter",
+      "type": "nominal",
+      "title": "Leading Cause",
+      "scale": {
+        "domain": ["Neoplasms", "Diseases of the circulatory system"],
+        "range": ["#1f77b4", "#d62728"]
+      },
+      "legend": {
+        "orient": "bottom"
+      }
+    },
+
+    "opacity": {
+      "field": "percent_of_total",
+      "type": "quantitative",
+      "scale": {
+        "domain": [20, 35],
+        "range": [0.3, 1]
+      },
+      "title": "% of Total Deaths",
+      "legend": null
+    },
+
+    "tooltip": [
+      {
+        "field": "sheet",
+        "title": "State"
+      },
+      {
+        "field": "leading_chapter",
+        "title": "Leading Cause"
+      },
+      {
+        "field": "percent_of_total",
+        "title": "% of deaths"
+      },
+      {
+        "field": "year",
+        "title": "Year"
+      }
+    ]
+  }
+}
