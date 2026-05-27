@@ -31,8 +31,18 @@
       "title": "Percent of deaths"
     },
     "color": {
+      "legend": { "orient": "bottom" },
       "field": "cause",
-      "type": "nominal"
+      "type": "nominal",
+      "title": "Death Category",
+      "scale": {
+        "domain": [
+          "Communicable, maternal, perinatal and nutritional conditions",
+          "Noncommunicable diseases",
+          "Injuries"
+        ],
+        "range": ["#1f77b4", "#1ba31e", "#731fb4"]
+      }
     },
     "tooltip": [
       { "field": "country" },

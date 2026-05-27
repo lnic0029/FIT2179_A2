@@ -3,7 +3,7 @@
   "width": "container",
   "height": 400,
   "autosize": {
-    "type": "fit",
+    "type": "fit-x",
     "contains": "padding"
   },
   "title": "Global Causes of Death Over Time (Normalized)",

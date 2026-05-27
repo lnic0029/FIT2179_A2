@@ -72,10 +72,9 @@
             "domain": [
               "Noncommunicable diseases",
               "Communicable, maternal, perinatal and nutritional conditions",
-              "Injuries",
-              "nan"
+              "Injuries"
             ],
-            "range": ["#1f77b4", "#1ba31e", "#ffffff", "000000"]
+            "range": ["#1f77b4", "#1ba31e", "#731fb4"]
           }
         },
 

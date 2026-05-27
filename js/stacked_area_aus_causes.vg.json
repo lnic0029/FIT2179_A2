@@ -27,7 +27,9 @@
       "field": "year_num",
       "type": "quantitative",
       "title": "Year",
-      "sort": "ascending"
+      "axis": {
+        "format": "d"
+      }
     },
 
     "y": {
