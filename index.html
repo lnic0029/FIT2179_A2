@@ -142,16 +142,17 @@
         <div class="dashboard4"> 
             <div id="ages_slope" class="left1"></div> 
             <p class="chart_description" class="right1">
-                aa 
-            </p>
-            <p class="chart_description" class="right2">
                 The trend of leading causes of death over different age periods can 
                 be seen here. 
             </p>
-            <p class="chart_description" class="right3">
+            <p class="chart_description" class="right2">
                 Communicable, maternal, perinatal causes, and nutritional causes dominate the leading causes of death for 
                 0-4 year olds, while injuries are the most common way to die for 15-29 year olds. It is only at 30+ where the leading cause 
-                of noncommunicable diseases appears.
+                of noncommunicable diseases starts to dominate.
+            </p>
+            <p class="chart_description" class="right3">
+                Noncommunicable diseases are the leading percentage of deaths for people over the age of 30. This category includes cancer and 
+                heart disease, which are the leading causes of death worldwide due to most deaths occuring at an older age.
             </p>
             <script type="text/javascript">
                 vegaEmbed('#ages_slope', "js/ages_slope.vg.json").then(function(result) {}).catch(console.error);
@@ -162,8 +163,18 @@
 
     <div id="footer">
         <h2>References</h2>
-        <p><a href="https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death">World Health Organisation</a></p>
-        <p><a href="https://www.abs.gov.au/statistics/health/causes-death/causes-death-australia/latest-release">Australian Bureau of Statistics</a></p>
+        <p>
+            World Health Organisation: 
+            <a href="https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death">
+            Cause-specific mortality, 2000–2021
+            </a>
+        </p>
+        <p>
+            Australian Bureau of Statistics: 
+            <a href="https://www.abs.gov.au/statistics/health/causes-death/causes-death-australia/latest-release">
+                Causes of Death, Australia
+            </a>
+        </p>
     </div>
     
 </body>
