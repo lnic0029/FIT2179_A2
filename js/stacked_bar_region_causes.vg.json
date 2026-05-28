@@ -250,11 +250,14 @@
       "title": "Death Category",
       "scale": {
         "domain": [
-          "Communicable, maternal, perinatal and nutritional conditions",
           "Noncommunicable diseases",
+          "Communicable, maternal, perinatal and nutritional conditions",
           "Injuries"
         ],
         "range": ["#1f77b4", "#1ba31e", "#731fb4"]
+      },
+      "legend": {
+        "orient": "bottom"
       }
     },
 
