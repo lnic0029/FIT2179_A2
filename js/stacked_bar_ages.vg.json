@@ -19,16 +19,20 @@
     "x": {
       "field": "age_group",
       "type": "nominal",
-      "axis": { "labelAngle": -25 },
-      "title": "Age Group"
+      "title": "Age Group",
+      "sort": ["0-4", "5-14", "15-29", "30-49", "50-59", "60-69", "70+"],
+      "axis": { "labelAngle": -25 }
     },
     "xOffset": {
       "field": "cause"
     },
     "y": {
-      "field": "percent",
+      "field": "deaths",
       "type": "quantitative",
-      "title": "Percent of deaths"
+      "title": "Number of deaths (square root scale)",
+      "scale": {
+        "type": "sqrt"
+      }
     },
     "color": {
       "legend": { "orient": "bottom" },
@@ -41,14 +45,13 @@
           "Noncommunicable diseases",
           "Injuries"
         ],
-        "range": ["#1f77b4", "#1ba31e", "#731fb4"]
+        "range": ["#1f77b4", "#1ba31e", "#e4ca03"]
       }
     },
     "tooltip": [
       { "field": "country" },
       { "field": "age_group" },
       { "field": "cause" },
-      { "field": "percent" },
       { "field": "deaths" }
     ]
   }
