@@ -62,7 +62,7 @@
     },
 
     "tooltip": [
-      { "field": "year", "type": "ordinal" },
+      { "field": "year", "type": "ordinal", "title": "Year" },
       {
         "field": "major_category",
         "type": "nominal",

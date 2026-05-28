@@ -264,7 +264,8 @@
     "tooltip": [
       {
         "field": "region",
-        "type": "nominal"
+        "type": "nominal",
+        "title": "Region"
       },
       {
         "field": "major_category",
