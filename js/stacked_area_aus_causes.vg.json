@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Mortality by Cause Group (Australia, 2014–2024)",
   "width": "container",
-  "height": 400,
+  "height": 500,
   "autosize": {
     "type": "fit-x",
     "contains": "padding"
@@ -42,7 +42,17 @@
     "color": {
       "field": "grouped_cause",
       "type": "nominal",
-      "title": "Cause Group"
+      "title": "Cause Group",
+      "scale": {
+        "domain": [
+          "Cancer",
+          "Heart disease",
+          "Injuries",
+          "Other",
+          "Respiratory diseases"
+        ],
+        "range": ["#1f77b4", "#f51818", "#731fb4", "#8a8a8a", "#e17c09"]
+      }
     },
 
     "tooltip": [
