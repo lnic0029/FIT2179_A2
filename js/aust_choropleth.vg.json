@@ -76,7 +76,7 @@
       "title": "Leading Cause",
       "scale": {
         "domain": ["Neoplasms", "Diseases of the circulatory system"],
-        "range": ["#1f77b4", "#f51818"]
+        "range": ["#731fb4", "#f51818"]
       },
       "legend": {
         "orient": "bottom"
