@@ -46,7 +46,6 @@ h1 {
  {
     width: 100%;
     max-width: 100%;
-    min-height: 400px;
 
     background: white;
     border-radius: 12px;
@@ -72,7 +71,8 @@ h1 {
 	margin-bottom: 50px;
 
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-rows: min-content;
 
     gap: 20px;
 
@@ -113,6 +113,41 @@ h1 {
     min-width: 0;
 }
 
+.dashboard4 {
+    display: grid;
+    margin-bottom: 50px;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+
+    gap: 20px;
+
+    align-items: start;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.left1 {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    min-height: 500px;
+}
+.right1 {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 100px;
+}
+.right2 {
+    grid-column: 2;
+    grid-row: 2;
+    min-height: 100px;
+}
+.right3 {
+    grid-column: 2;
+    grid-row: 3;
+    min-height: 100px;
+}
+
 .left_span {
     grid-column: 1;
     grid-row: 1 / span 2;
@@ -122,39 +157,20 @@ h1 {
 .top_right {
     grid-column: 2;
     grid-row: 1;
-    min-height: 250px;
-    height: fit-content;
-    max-height: 200px;
+    min-height: 100px;
 }
 
 .right {
     grid-column: 2;
     min-height: 250px;
-    height: fit-content;
 }
 
 .left {
     grid-column: 1;
     min-height: 250px;
-    height: fit-content;
 }
 
 .smaller_description {
-    grid-column: 2;
-    grid-row: 2;
-
-    background: #ffffff;
-    padding: 15px;
-
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-
-    align-self: start;
-}
-
-.side_description {
-    grid-column: 2;
-    grid-row: 1 / span 2;
 
     background: #ffffff;
     padding: 15px;
@@ -171,7 +187,7 @@ h1 {
     border-left: 4px solid #0b1f3a;
     border-radius: 8px;
 
-    max-width: 900px;
+    max-width: 100%;
     margin-top: 15px;
 }
 
