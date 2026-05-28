@@ -15,7 +15,7 @@
       "bind": {
         "input": "search",
         "placeholder": "Search country (e.g. aus, ang, arg)",
-        "name": "Country Search"
+        "name": "Country Search: "
       }
     }
   ],
