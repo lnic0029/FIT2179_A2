@@ -34,7 +34,7 @@
       "title": "Gender",
       "scale": {
         "domain": ["males", "females"],
-        "range": ["#f58518", "#9d18f5"]
+        "range": ["#f51818", "#f518c9"]
       }
     },
     "tooltip": [
