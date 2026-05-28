@@ -1,8 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "width": 700,
-  "height": 500,
+  "width": "container",
+  "height": 650,
+
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "title": "Categories of Leading Causes of Death in Australia (2014-2024)",
 
   "projection": {
@@ -71,7 +76,7 @@
       "title": "Leading Cause",
       "scale": {
         "domain": ["Neoplasms", "Diseases of the circulatory system"],
-        "range": ["#1f77b4", "#d62728"]
+        "range": ["#1f77b4", "#f51818"]
       },
       "legend": {
         "orient": "bottom"
