@@ -5,9 +5,12 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rye&display=swap" rel="stylesheet">  
 </head>
 <body>
-    <h1>How Causes of Death Differ Between Countries and Over Time</h1>
+    <h1 class="lato-thin">How Causes of Death Differ Between Countries and Over Time</h1>
     <div id="section1" class="section">
         <h2>Global Causes of Death</h2>
         <div class="dashboard2">
@@ -24,7 +27,7 @@
                 vegaEmbed('#choropleth_map', map).then(function(result) {}).catch(console.error);
             </script>  
         </div>
-        
+        <h3>Top Categories of Causes of Death Globally</h3>
         <div class="dashboard">
             <div id="region_causes" class="left_span"></div>
             <div id="cause_time" class="top_right"></div>
@@ -41,13 +44,19 @@
                 vegaEmbed('#region_causes', "js/stacked_bar_region_causes.vg.json").then(function() {}).catch(console.error);
             </script>
         </div>
-        <div class="dashboard3">
-            <div id="bubble_plot"></div>  <!-- add slider for year-->
+        <h3>Comparison of Causes of Death Between Countries</h3>
+        <div class="dashboard">
+            <div id="bubble_plot" class="left_span"></div>  <!-- add slider for year-->
+            <div class="chart_description" class="top_right">
+                <p>
+                    This is a comparison of countries by a breakdown of the different causes of death. It shows that the share of noncommunicable and communicable 
+                    causes of death are inversly proportional, with a few outliers due to a higher proportion of deaths caused by injury. 
+                </p>
+            </div>
             <div class="chart_description">
                 <p>
-                    This is an overview of the types of deaths that were most common in each country in 2021. Diseases that are grouped as communicable, maternal, perinatal, and nutritional 
-                    can be found more commonly in Africa and a few countries in South America, while the majority of countries are led by noncommunicable diseases (e.g. Cancer, Heart Diseases). 
-                    These categorical causes of death can be more clearly seen for each region below.
+                    More developed countries tend 
+                    to have a higher proportion of noncommunicable deaths as they are more likely to die of causes common to old age such as cancer and heart disease.
                 </p>
             </div>
             <script type="text/javascript">
@@ -58,27 +67,38 @@
 
     <div id="section2" class="section">
         <h2>Causes of Death in Australia</h2>
-        <h3>Leading Causes of Death in Australia</h3>
-        <div class="dashboard3">
-            <div id="aus_map" class="left"></div>
-            <div class="chart_description" class="right">
+        <div class="dashboard4">
+            <div id="aus_map" class="left1"></div>
+            <div class="chart_description" class="right1">
                 <p> 
                     In 2014, heart diseases were the leading cause of death in New South Wales (NSW), South Australia (SA), and Victoria. In 2015, 
-                    neoplasms(cancers) took over as the leading cause of death for all regions other than NSW and since 2016, neoplasms have been the leading cause of death for all regions in 
+                    malignant neoplasms (cancer) took over as the leading cause of death for all regions other than NSW and since 2016, malignant neoplasms have been the leading cause of death for all regions in 
                     Australia.
+                </p>
+            </div>
+            <div class="chart_description"class="right2">
+                <p> 
+                    Heart disease was a more common cause of death in 2014 and 2015, but it was already on the decline due to improvements in medical treatments and 
+                    reduced smoking rates.
+                </p>
+            </div>
+            <div class="smaller_description"class="right3">
+                <p> 
+                    Note: Not all neoplasms are cancers, some are benign, but all neoplasms that cause death (malignant neoplasms) are cancers
                 </p>
             </div>
             <script>
                 vegaEmbed('#aus_map', "js/aust_choropleth.vg.json").then(function() {}).catch(console.error);
             </script>
         </div>
-
+        <h3>Top Causes of Death in Australia</h3>
         <div class="dashboard">
             <div id="heatmap" class="left_span"></div>
             <div id="top_causes" class="top_right"></div>
             <div class="chart_description">
                 <p>
-                    The leading causes of death are all noncommunicable diseases, a mixture of mostly neoplasms (cancers) and heart disease.
+                    The leading causes of death are all noncommunicable diseases, a mixture of mostly malignant neoplasms (cancers) and heart disease, 
+                    with malignant neoplasms as the leading cause of death of all years by far.
                 </p>
             </div>
         </div>
@@ -95,6 +115,7 @@
                 <p>
                     This chart shows the trend of deaths over time in Australia by gender.
                     It highlights a steady increase in total deaths.
+                    This can be explained by an increase in total population over that same time period.
                 </p>
             </div>
         </div>
@@ -117,6 +138,7 @@
                 of death that most affect elderly people.
             </p>
         </div>
+        <h3>Percentage of Deaths for Each Age Group</h3>
         <div class="dashboard4"> 
             <div id="ages_slope" class="left1"></div> 
             <p class="chart_description" class="right1">
