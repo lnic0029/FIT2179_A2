@@ -17,7 +17,7 @@ h1 {
     padding: 30px 20px;
     margin: 0;
     /*background: linear-gradient(135deg, #1e3a8a, #2563eb);*/
-	background: #2563eb;
+	background: #0b1f3a;
     color: white;
     font-size: 2rem;
 }
@@ -29,13 +29,21 @@ h1 {
 .section h2 {
     font-size: 1.6rem;
     margin-bottom: 20px;
-    border-left: 5px solid #2563eb;
+    border-left: 5px solid #0b1f3a;
     padding-left: 12px;
 }
 
 #choropleth_map,
 #area_graph,
-#line_graph {
+#line_graph,
+#region_causes,
+#cause_time,
+#aus_map,
+#heatmap,
+#top_causes,
+#ages_slope,
+#ages_bar
+ {
     width: 100%;
     max-width: 100%;
     min-height: 400px;
@@ -49,12 +57,22 @@ h1 {
     overflow: hidden;
 }
 
+#ages_slope {
+    display: flex;
+    flex-direction: column;
+}
+
+#ages_slope .vega-bindings {
+    order: -1;
+    margin-bottom: 15px;
+}
+
 .dashboard {
     display: grid;
 	margin-bottom: 50px;
 
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
 
     gap: 20px;
 
@@ -62,12 +80,28 @@ h1 {
     width: 100%;
     overflow-x: hidden;
 }
-.dashboard2 {
-	display: grid;
-	margin-bottom: 50px;
 
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+.dashboard2 {
+    display: grid;
+    margin-bottom: 50px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    gap: 20px;
+
+    align-items: start;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.dashboard3 {
+    display: grid;
+    margin-bottom: 50px;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+
     gap: 20px;
 
     align-items: start;
@@ -79,19 +113,33 @@ h1 {
     min-width: 0;
 }
 
-#area_graph {
+.left_span {
     grid-column: 1;
     grid-row: 1 / span 2;
     min-height: 500px;
 }
 
-#line_graph {
+.top_right {
     grid-column: 2;
     grid-row: 1;
     min-height: 250px;
+    height: fit-content;
+    max-height: 200px;
 }
 
-.chart-description {
+.right {
+    grid-column: 2;
+    min-height: 250px;
+    height: fit-content;
+}
+
+.left {
+    grid-column: 1;
+    min-height: 250px;
+    height: fit-content;
+}
+
+.smaller_description {
     grid-column: 2;
     grid-row: 2;
 
@@ -104,14 +152,43 @@ h1 {
     align-self: start;
 }
 
-#map_description {
+.side_description {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+    background: #ffffff;
+    padding: 15px;
+
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+
+    align-self: start;
+}
+
+.chart_description {
     background: white;
     padding: 12px;
-    border-left: 4px solid #2563eb;
+    border-left: 4px solid #0b1f3a;
     border-radius: 8px;
 
     max-width: 900px;
     margin-top: 15px;
+}
+
+#footer {
+  background-color: #0b1f3a;
+  color: white;
+
+  width: 100%;
+  padding: 20px 20px;
+
+
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+a{
+	color: white;
 }
 
 
