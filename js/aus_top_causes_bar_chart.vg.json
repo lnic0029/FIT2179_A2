@@ -44,6 +44,9 @@
       "type": "quantitative",
       "title": "Total Deaths"
     },
+    "color": {
+      "value": "#1f77b4"
+    },
 
     "tooltip": [
       { "field": "cause", "type": "nominal" },
