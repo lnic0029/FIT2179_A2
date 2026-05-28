@@ -83,10 +83,14 @@
         },
 
         "tooltip": [
-          { "field": "country", "type": "nominal" },
-          { "field": "age_group", "type": "nominal" },
-          { "field": "cause", "type": "nominal" },
-          { "field": "percent", "type": "quantitative", "format": ".2f" }
+          { "field": "country", "type": "nominal", "title": "Country" },
+          { "field": "age_group", "type": "nominal", "title": "Age Group" },
+          { "field": "cause", "type": "nominal", "title": "Cause Category" },
+          {
+            "field": "percent",
+            "type": "quantitative",
+            "title": "Percent"
+          }
         ]
       }
     }

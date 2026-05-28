@@ -50,10 +50,10 @@
       }
     },
     "tooltip": [
-      { "field": "country" },
-      { "field": "age_group" },
-      { "field": "cause" },
-      { "field": "deaths" }
+      { "field": "country", "title": "Country" },
+      { "field": "age_group", "title": "Age Group" },
+      { "field": "cause", "title": "Cause Category" },
+      { "field": "deaths", "title": "Deaths" }
     ]
   }
 }

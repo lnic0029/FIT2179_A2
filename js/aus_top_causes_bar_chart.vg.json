@@ -1,12 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
-  "height": 400,
+  "height": 350,
   "autosize": {
     "type": "fit",
     "contains": "padding"
   },
-  "title": "Top 10 Causes of Death",
+  "title": "Top Causes of Death (2021)",
 
   "data": {
     "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/australia_cause_time.csv"
@@ -36,7 +36,10 @@
       "field": "cause",
       "type": "nominal",
       "sort": "-x",
-      "title": "Cause"
+      "title": "Cause",
+      "axis": {
+        "labelLimit": 150
+      }
     },
 
     "x": {
@@ -49,8 +52,12 @@
     },
 
     "tooltip": [
-      { "field": "cause", "type": "nominal" },
-      { "field": "total_deaths", "type": "quantitative" }
+      { "field": "cause", "type": "nominal", "title": "Cause" },
+      {
+        "field": "total_deaths",
+        "type": "quantitative",
+        "title": "Number of Deaths"
+      }
     ]
   }
 }

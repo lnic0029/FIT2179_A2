@@ -38,9 +38,9 @@
       }
     },
     "tooltip": [
-      { "field": "year", "type": "temporal" },
-      { "field": "gender", "type": "nominal" },
-      { "field": "deaths", "type": "quantitative" }
+      { "field": "year", "type": "temporal", "title": "Year", "format": "%Y" },
+      { "field": "gender", "type": "nominal", "title": "Gender" },
+      { "field": "deaths", "type": "quantitative", "title": "Deaths" }
     ]
   },
   "config": {
