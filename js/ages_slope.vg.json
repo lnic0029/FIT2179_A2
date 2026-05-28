@@ -3,6 +3,7 @@
 
   "width": 650,
   "height": 450,
+  "title": "Global Percent Cause of Death Per Age Group (2021)",
 
   "data": {
     "url": "https://raw.githubusercontent.com/lnic0029/FIT2179_A2/refs/heads/main/data/global_age_causes_2021.csv"
@@ -69,7 +70,7 @@
               "Noncommunicable diseases",
               "Injuries"
             ],
-            "range": ["#1f77b4", "#1ba31e", "#731fb4"]
+            "range": ["#1f77b4", "#1ba31e", "#e4ca03"]
           }
         },
 
